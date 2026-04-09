@@ -26,6 +26,7 @@ def draw_player(surface, camera):
 
 def update_player(dt): 
     input = get_player_input()
+    dt = dt/4
     
     #check for on ground
     ghost_rect = player['rect'].move(0,1) #1 pixel below player
@@ -41,7 +42,7 @@ def update_player(dt):
     if input.get('RIGHT'):
         player['force'][0] += player['speed'] * dt
     if input.get('JUMP') and on_ground:
-        player['force'][1] -= player['speed'] * 5 * dt
+        player['force'][1] -= player['speed'] * 6.5 * dt
     
    
     player['force'][1] = min(player['force'][1], GRAVITY*5)
@@ -91,7 +92,7 @@ player = {
     'pos': [100,100],
     'size': [32,32],
     'rect': pygame.Rect([100,100],[32,32]),
-    'speed': 1,
+    'speed': 2,
     'force':  [0,0], 
     'update': update_player,
     'draw': draw_player,

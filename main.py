@@ -22,8 +22,12 @@ def init():
     
     #add colliders to the grid
     add_collider_to_grid((0,18), (34,3), collider_grid)
-    add_collider_to_grid((36,18), (3,3), collider_grid)
-    
+    add_collider_to_grid((36,18), (8,3), collider_grid)
+    add_collider_to_grid((14,14), (9,1), collider_grid)
+    add_collider_to_grid((25,10), (6,1), collider_grid)
+    add_collider_to_grid((48,18), (20,3), collider_grid)
+    add_collider_to_grid((35,10), (4,1), collider_grid)
+    add_collider_to_grid((43,8), (4,1), collider_grid)
 
     #camera
     config['camera'] = camera
