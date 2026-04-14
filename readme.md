@@ -1,2 +1,9 @@
 #itech210-sp2026-final
 
+I've been playing a bit of horror games lately so i wanted my game to have more of a horror vibe to it, so my game is going to be centered around a windago story of a young grandchild sticking up for the village when no one else would. The story goes "The villagers realized a windigo was coming when they saw a kettle swinging back and forth over the fire. No one was brave enough or strong enough to challenge this ice creature. After they had sent for a wise old grandmother who lived at the edge of the village, the little grandchild, hearing the old woman say she was without power to do anything, asked what was wrong. While the people moaned that they would all die, the little girl asked for two sticks of peeled sumac as long as her arms. She took these home with her while the frightened villagers huddled together.
+
+That night it turned bitterly cold. The child told her grandmother to melt a kettle of tallow over the fire. As the people watched, trees began to crack open and the river froze solid. All this was caused by the windigo, as tall as a white pine tree, coming over the hill.
+
+With a sumac stick gripped in each hand, the little girl ran out to meet him. She had two dogs which ran ahead of her and killed the windigo's dog. But still the windigo came on. The little girl got bigger and bigger until when they met she was as big as the windigo himself. With one sumac stick, she knocked him down and with the other she crushed his skull-the sticks had turned to copper. After she killed the windigo, the little girl swallowed the hot tallow and gradually grew smaller until she was herself again.
+
+Everyone rushed over to the windigo and began to chop him up. He was made of ice, but in the center they found the body of a man with his skull crushed in. The people were very thankful and gave the little girl everything she wanted."
