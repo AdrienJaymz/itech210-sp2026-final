@@ -1,5 +1,7 @@
 import pygame
 from settings import *
+
+#background_image = pygame.image.load("images/map2.png")
    
 def draw_grid(surface, camera, grid):
     for key,val in grid.items():
@@ -7,6 +9,7 @@ def draw_grid(surface, camera, grid):
         x = int(pos[0])*CELL_SIZE - camera['pos'][0]
         y = int(pos[1])*CELL_SIZE - camera['pos'][1]
         
+        background_image = pygame.image.load("images/map2.png")
         pygame.draw.rect(surface, WHITE, pygame.Rect((x,y), (CELL_SIZE,CELL_SIZE)), 1)
         font = small_font.render(key, True, WHITE)
         rect = font.get_rect(center=(x+CELL_SIZE//2, y+CELL_SIZE//2))

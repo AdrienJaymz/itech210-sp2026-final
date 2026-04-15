@@ -13,7 +13,7 @@ def init():
     pygame.display.set_caption("ITECH 210 Final")
     config = {}
 
-    
+
     #collider grid
     collider_grid = grid
     for x in range(LEVEL[0]//CELL_SIZE):
@@ -22,15 +22,17 @@ def init():
     config['collider_grid'] = collider_grid
     
     #add colliders to the grid
-    add_collider_to_grid((0,20), (34,3), collider_grid)
+    add_collider_to_grid((0,21), (34,3), collider_grid)
+    add_collider_to_grid((7,18), (7,1), collider_grid)
+    add_collider_to_grid((21,12), (2,1), collider_grid)
+    add_collider_to_grid((17,9), (3,1), collider_grid)
+    add_collider_to_grid((10,6), (5,1), collider_grid)
+    add_collider_to_grid((26,16), (2,5), collider_grid)
     add_collider_to_grid((36,18), (8,3), collider_grid)
-    add_collider_to_grid((14,14), (9,1), collider_grid)
-    add_collider_to_grid((25,10), (6,1), collider_grid)
+    add_collider_to_grid((15,15), (5,1), collider_grid)
     add_collider_to_grid((48,18), (20,3), collider_grid)
     add_collider_to_grid((35,10), (4,1), collider_grid)
     add_collider_to_grid((43,8), (4,1), collider_grid)
-    add_collider_to_grid((19,5), (3,1), collider_grid)
-    add_collider_to_grid((23,1), (3,1), collider_grid)
 
     #camera
     config['camera'] = camera
@@ -55,6 +57,7 @@ def draw(surface, camera, objects):
     #all draw calls are made from here
     for obj in objects:
         obj['draw'](surface, camera)
+    #screen.blit(background_image, (0, 0))
 
 def game_loop(screen, clock, config):
     #where the main game loop happens
@@ -77,8 +80,6 @@ def game_loop(screen, clock, config):
         
         screen.fill(BLACK)
         draw(screen, camera, objects)
-        game_display.blit(Background, (0,0))
-        screen.blit(map.png, (0,0))
 
         #debug mode
         if debug:
