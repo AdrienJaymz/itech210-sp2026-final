@@ -33,6 +33,8 @@ def add_collider_to_grid(pos, size, grid):
         for y in range(pos[1], pos[1]+size[1]):
             grid[f"{x},{y}"] = rect
 
+#background_image = pygame.image.load("images/map2.png")
+
 def draw_colliders(surface, camera, grid):
     for key,val in grid.items():
         pos = key.split(',')
@@ -42,4 +44,5 @@ def draw_colliders(surface, camera, grid):
             col_surface = pygame.Surface((CELL_SIZE, CELL_SIZE), pygame.SRCALPHA)
             pygame.draw.rect(col_surface, BLUE_A, col_surface.get_rect())
             surface.blit(col_surface, (x,y))
+            
  

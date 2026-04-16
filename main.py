@@ -5,6 +5,7 @@ from player import *
 from grid import *
 from collision import *
 
+background_image = pygame.image.load("images/map2.png")
 
 pygame.init()
 
@@ -57,7 +58,7 @@ def draw(surface, camera, objects):
     #all draw calls are made from here
     for obj in objects:
         obj['draw'](surface, camera)
-    #screen.blit(background_image, (0, 0))
+    screen.blit(background_image, (0,0))
 
 def game_loop(screen, clock, config):
     #where the main game loop happens
