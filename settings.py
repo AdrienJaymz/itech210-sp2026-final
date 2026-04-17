@@ -5,8 +5,8 @@ pygame.font.init()
 WIDTH = 1200
 HEIGHT = 675
 CELL_SIZE = 32
-LEVEL =(200*CELL_SIZE, 40*CELL_SIZE)
-GRAVITY = 2
+LEVEL =(145*CELL_SIZE, 40*CELL_SIZE)
+GRAVITY = 1
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
