@@ -9,15 +9,13 @@ RIGHT = [1,0]
 LEFT = [-1,0]
 
 
-enemys = [[29,27], [33,35]]
+enemys = [((29,27), get_collisions), ((33,35), get_collisions)]
 enemy_dirs = [RIGHT, LEFT]
 
 def draw_enemy(screen, x, y):
     pygame.draw.rect(surface, RED_A, (pos, enemy['size']))
 
-
-
-for i, enemy in enumerate(enemys):
+#for i, enemy in enumerate(enemys):
     if random.random() < 0.10:
         #randomly changes direction
         dirs = [LEFT, RIGHT]

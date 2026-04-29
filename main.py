@@ -6,7 +6,7 @@ from grid import *
 from collision import *
 from enemy import *
 
-background_image = pygame.image.load("images/mapv3.png")
+background_image = pygame.image.load("images/mapv4.png")
 
 pygame.init()
 
@@ -114,6 +114,7 @@ def init():
     add_collider_to_grid((80,14), (4,1), collider_grid)
     add_collider_to_grid((75,17), (5,1), collider_grid)
 
+    
 
     #camera
     config['camera'] = camera
@@ -164,7 +165,7 @@ def game_loop(screen, clock, config):
         draw(screen, camera, objects)
 
         #debug mode
-        #if debug:
+        #f debug:
             #draw_colliders(screen, camera, grid)
             #draw_grid(screen, camera, grid)
         
